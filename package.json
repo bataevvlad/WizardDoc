@@ -1,0 +1,32 @@
+{
+  "name": "wizardDoc",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "ios": "ts-node src/index.ts platform=ios",
+    "ios:name": "ts-node src/index.ts fileName=FileName platform=ios",
+    "ios:name:root": "ts-node src/index.ts fileName=FileName rootIdContainer=bottomsheet platform=ios",
+    "android": "ts-node src/index.ts platform=android",
+    "android:name": "ts-node src/index.ts fileName=FileName platform=android",
+    "android:name:root": "ts-node src/index.ts fileName=FileName rootIdContainer=bottomsheet platform=android"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0",
+    "webdriverio": "^9.2.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
+  }
+}
