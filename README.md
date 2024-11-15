@@ -124,19 +124,20 @@ npm run android:name:root
 ## How to Start WizardDoc for iOS
 
 ### Pre-requisites:
-1. **Booted iOS Simulator**:
-   - Ensure an iOS simulator is booted and running.
-   - Verify with:
-     ```bash
-     xcrun simctl list devices
-     ```
-2. **Xcode Tools**:
-   - Install and configure Xcode and the `xcrun` command-line tools.
-3. **Appium Server**:
-   - Start the Appium server with:
-     ```bash
-     appium
-     ```
+**Booted iOS Simulator**:
+- Ensure an iOS simulator is booted and running.
+- Verify with:
+```bash
+ xcrun simctl list devices
+```
+**Xcode Tools**:
+- Install and configure Xcode and the `xcrun` command-line tools.
+
+**Appium Server**:
+Start the Appium server with:
+```bash
+appium
+```
 
 ### Launching WizardDoc for iOS:
 You can start the script using the following commands:
