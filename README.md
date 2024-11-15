@@ -1,4 +1,14 @@
-# WizardDoc - Automated Test ID Documentation Generator
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/217351f9-7665-44f5-b27e-e57e22818b25" alt="Centered Image" width="300"/>
+</div>
+
+
+<div align="center">
+  
+## Automated Test ID Documentation Generator
+
+</div>
 
 WizardDoc is a Node.js-based tool designed to automate the extraction of test IDs and generate markdown documentation. This is particularly useful for analyzing the page source of Android and iOS applications using Appium WebDriver and creating structured reports.
 
