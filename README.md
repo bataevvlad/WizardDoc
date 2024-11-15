@@ -49,16 +49,117 @@ The output markdown includes:
 - Test ID information.
 - Component types and descriptions.
 
-## Usage Instructions
+---
 
-1. **Setup Appium Environment:**
-   Ensure Appium is running and configured for your platform.
+## Prerequisites
 
-2. **Run the Script:**
-   Execute the relevant script from the `scripts` section in `package.json`.
+### General
+- **Node.js**: Ensure Node.js is installed.
+- **Appium**: Start the Appium server before running any scripts. Use the following command to start Appium:
+  ```bash
+  appium
+  ```
+  Ensure it is running on the default port `4723`.
 
-3. **Generated Output:**
-   The markdown file is saved in the current directory with a timestamped filename.
+---
+
+## How to Start WizardDoc for Android
+
+### Pre-requisites:
+1. **Android Emulator or Device**:
+   - Ensure you have an Android emulator running or a physical device connected.
+   - Verify that `adb` is properly configured by running:
+     ```bash
+     adb devices
+     ```
+2. **Appium Server**:
+   - Start the Appium server with:
+     ```bash
+     appium
+     ```
+
+### Launching WizardDoc for Android:
+You can start the script using the following commands:
+
+#### **Default settings**:
+Detects the foreground app package and activity on the connected Android device. Fetches test IDs and generates the markdown report.
+```bash
+npm run android
+```
+
+#### **With custom fileName**:
+Use a custom name for the generated markdown file.
+```bash
+npm run android:name
+```
+
+#### **With custom fileName and rootIdContainer**:
+Filters test IDs based on the container ID specified in `rootIdContainer`.
+```bash
+npm run android:name:root
+```
+
+### Main Flow for Android:
+1. Detects the foreground app using:
+   ```bash
+   adb shell dumpsys activity
+   ```
+2. Extracts the package name and activity name of the running app.
+3. Uses these values to launch the app and retrieve the page source.
+4. Filters the source for elements matching test ID patterns.
+5. Generates the markdown report.
+
+---
+
+## How to Start WizardDoc for iOS
+
+### Pre-requisites:
+1. **Booted iOS Simulator**:
+   - Ensure an iOS simulator is booted and running.
+   - Verify with:
+     ```bash
+     xcrun simctl list devices
+     ```
+2. **Xcode Tools**:
+   - Install and configure Xcode and the `xcrun` command-line tools.
+3. **Appium Server**:
+   - Start the Appium server with:
+     ```bash
+     appium
+     ```
+
+### Launching WizardDoc for iOS:
+You can start the script using the following commands:
+
+#### **Default settings**:
+Detects installed apps on the simulator and prompts you to select one. Fetches test IDs and generates the markdown report.
+```bash
+npm run ios
+```
+
+#### **With custom fileName**:
+Use a custom name for the generated markdown file.
+```bash
+npm run ios:name
+```
+
+#### **With custom fileName and rootIdContainer**:
+Filters test IDs based on the container ID specified in `rootIdContainer`.
+```bash
+npm run ios:name:root
+```
+
+### Main Flow for iOS:
+1. Retrieves the UUID of the running simulator using:
+   ```bash
+   xcrun simctl
+   ```
+2. Lists installed apps and prompts the user to select one.
+3. Uses the selected app's bundle ID to launch the app on the simulator.
+4. Retrieves the page source and filters it for test IDs matching the specified criteria.
+5. Generates the markdown report.
+
+---
 
 ## Developer Notes
 
