@@ -1,4 +1,4 @@
-interface Match {
+export interface Match {
     component: string;
     testIdName: string;
 }
@@ -18,7 +18,7 @@ export const generateMarkdownContent = (matches: Match[], componentName: string)
   return content;
 };
 
-const getDescriptionForComponent = (component: string): string => {
+export const getDescriptionForComponent = (component: string): string => {
   const descriptions: Record<string, string> = {
     'android.widget.EditText': 'Used for inputting text',
     'android.widget.Button': 'Clickable button element',
@@ -40,7 +40,7 @@ const getDescriptionForComponent = (component: string): string => {
   return descriptions[component] || 'No description available';
 };
 
-const getElementType = (component: string): string => {
+export const getElementType = (component: string): string => {
   const typeMappings: Record<string, string> = {
     EditText: 'Input Field',
     TextField: 'Input Field',

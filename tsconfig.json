@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "jest"],
     "target": "ES6",
     "module": "commonjs",
     "outDir": "./dist",
@@ -11,7 +12,7 @@
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]
-    }
+    },
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
