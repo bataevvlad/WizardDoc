@@ -39,6 +39,7 @@ export const iosCapabilities: any = {
   },
 };
 
+
 export const startApp = async (): Promise<void> => {
   if (platform === 'android') {
     const foregroundApp = getAndroidForegroundAppPackageAndActivity();
