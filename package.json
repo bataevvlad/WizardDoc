@@ -9,7 +9,8 @@
     "android": "ts-node src/index.ts platform=android",
     "android:name": "ts-node src/index.ts fileName=FileName platform=android",
     "android:name:root": "ts-node src/index.ts fileName=FileName rootIdContainer=bottomsheet platform=android",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
