@@ -14,7 +14,9 @@ export const getAndroidForegroundAppPackageAndActivity = (): ForegroundApp | nul
     if (lineWithFocus) {
       // ResumedActivity: ActivityRecord{cb77ef3 u0 com.example.app/com.example.app.MainActivity t93}
       const match = lineWithFocus.match(
+        /* eslint-disable */
         /ResumedActivity: ActivityRecord\{.*\s([^\s\/]+)\/([^\s\}\s]+)\s/
+        /* eslint-enable */
       );
 
       if (match) {
