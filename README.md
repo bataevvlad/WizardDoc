@@ -1,4 +1,3 @@
-
 <div align="center">
     <img src="https://github.com/user-attachments/assets/8b21cb4a-b595-4529-b1f9-3e48454a5914" alt="Centered Image" width="300"/>
 </div>
@@ -10,6 +9,11 @@
 </div>
 
 WizardDoc is a Node.js-based tool designed to automate the extraction of test IDs and generate markdown documentation. This is particularly useful for analyzing the page source of Android and iOS applications using Appium WebDriver and creating structured reports.
+
+## Website and Downloads
+
+- **Official Website:** [https://wizarddoc.site/](https://wizarddoc.site/)
+- **Download Desktop App:** [Download link here](https://wizarddoc.site/WizardDoc.dmg)
 
 ## Features
 
