@@ -1,10 +1,10 @@
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/217351f9-7665-44f5-b27e-e57e22818b25" alt="Centered Image" width="300"/>
+    <img src="https://github.com/user-attachments/assets/8b21cb4a-b595-4529-b1f9-3e48454a5914" alt="Centered Image" width="300"/>
 </div>
 
 <div align="center">
-  
+
 ## Automated Test ID Documentation Generator
 
 </div>
